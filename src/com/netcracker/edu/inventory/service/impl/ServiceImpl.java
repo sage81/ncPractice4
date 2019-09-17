@@ -41,7 +41,7 @@ public class ServiceImpl implements Service {
     public void filtrateByType(Device[] devices, String type) {
         for (int i = 0; i < devices.length; i++) {
             if (devices[i] != null) {
-                if (devices[i].getType() != type) {
+                if (!type.equals(devices[i].getType())) {
                     devices[i] = null;
                 }
             }
