@@ -9,26 +9,48 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RackArrayImpl rack = new RackArrayImpl(15);
-
-        Battery battery = new Battery(4, "Battery", "DX Global", "XX5ST", null, 1);
-        Router router = new Router(20, "Router", "RT Manufacture", "Router1", null, 1000);
-        Switch swch = new Switch(3, "Switch", "SW Corp", "Switch1", null, 100, 8);
-        WifiRouter wifi = new WifiRouter(1, "WifiRouter", "Wifi Corp", "Wifi model1", null, 100,
-                "PROT1");
-
-        Device[] devices = new Device[] {null, battery, router, new Battery(), swch, wifi, null};
-
         ServiceImpl service = new ServiceImpl();
-        service.sortByIN(devices);
+
+        Battery b = new Battery();
+        b.setType(Battery.class.getSimpleName());
+        Router r = new Router();
+        r.setType(Router.class.getSimpleName());
+        Switch s = new Switch();
+        s.setType(Switch.class.getSimpleName());
+        WifiRouter wr = new WifiRouter();
+        wr.setType(WifiRouter.class.getSimpleName());
+        Device tn = new Battery();
+        tn.setType(null);
+        Device[] devices = new Device[] {null, r, b, tn, r, s, tn, null, wr, b};
+        Device[] expResult = new Device[] {null, r, null, null, r, null, null, null, null, null};
 
         showDevArray(devices);
 
-        service.filtrateByType(devices, null);
-        service.sortByIN(devices);
+        service.filtrateByType(devices, Router.class.getSimpleName());
 
         System.out.println("*******************************************************************");
         showDevArray(devices);
+
+//        RackArrayImpl rack = new RackArrayImpl(15);
+//
+//        Battery battery = new Battery(4, "Battery", "DX Global", "XX5ST", null, 1);
+//        Router router = new Router(20, "Router", "RT Manufacture", "Router1", null, 1000);
+//        Switch swch = new Switch(3, "Switch", "SW Corp", "Switch1", null, 100, 8);
+//        WifiRouter wifi = new WifiRouter(1, "WifiRouter", "Wifi Corp", "Wifi model1", null, 100,
+//                "PROT1");
+//
+//        Device[] devices = new Device[] {null, battery, router, new Battery(), swch, wifi, null};
+//
+//        ServiceImpl service = new ServiceImpl();
+//        service.sortByIN(devices);
+//
+//        showDevArray(devices);
+//
+//        service.filtrateByType(devices, null);
+//        service.sortByIN(devices);
+//
+//        System.out.println("*******************************************************************");
+//        showDevArray(devices);
 
     }
 
