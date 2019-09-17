@@ -25,7 +25,7 @@ public class Battery extends AbstractDevice {
     @Override
     public String toString() {
         return super.toString() + " Battery{" +
-                "chargeValume=" + chargeVolume +
+                "chargeVolume=" + chargeVolume +
                 '}';
     }
 }
