@@ -2,7 +2,6 @@ package com.netcracker.edu.inventory.service.impl;
 
 import com.netcracker.edu.inventory.model.Device;
 import com.netcracker.edu.inventory.service.Service;
-import com.sun.xml.internal.ws.util.StringUtils;
 
 public class ServiceImpl implements Service {
     @Override
