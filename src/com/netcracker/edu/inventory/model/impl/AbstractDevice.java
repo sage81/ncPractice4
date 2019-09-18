@@ -1,8 +1,8 @@
 package com.netcracker.edu.inventory.model.impl;
 
 import com.netcracker.edu.inventory.model.Device;
-
 import java.util.Date;
+import java.util.logging.Logger;
 
 public abstract class AbstractDevice implements Device {
 
@@ -11,6 +11,7 @@ public abstract class AbstractDevice implements Device {
     private String manufacturer;
     private String model;
     private Date productionDate;
+    private static Logger log = Logger.getLogger(AbstractDevice.class.getName());
 
     public AbstractDevice() {
     }
@@ -29,9 +30,15 @@ public abstract class AbstractDevice implements Device {
     }
 
     @Override
-    public void setIn(int in) {
+    public void setIn(int in) throws IllegalArgumentException {
+
         if (this.in == 0 && in > 0) {
             this.in = in;
+        } else if (in < 0) {
+            log.severe("IN(" + in + ") can not be negative");
+            throw new IllegalArgumentException("IN can not be negative");
+        } else if (this.in > 0) {
+            log.warning("Inventory number can not be reset");
         }
     }
 

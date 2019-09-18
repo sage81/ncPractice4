@@ -6,10 +6,15 @@ import com.netcracker.edu.inventory.model.Rack;
 import com.netcracker.edu.inventory.model.impl.*;
 import com.netcracker.edu.inventory.service.impl.ServiceImpl;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
-        DeviceValidationException v = new DeviceValidationException(null);
+        RackArrayImpl rack = new RackArrayImpl(5);
+        Battery battery = new Battery(-12,"bat", "man", "model", null, 45);
+
+        System.out.println(rack.isDeviceValid(null));
     }
 
     private static void showRack(Rack rack) {

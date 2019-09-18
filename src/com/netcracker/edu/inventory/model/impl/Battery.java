@@ -9,9 +9,9 @@ public class Battery extends AbstractDevice {
     public Battery() {
     }
 
-    public Battery(int in, String type, String manufacturer, String model, Date productionDate, int chargeValume) {
+    public Battery(int in, String type, String manufacturer, String model, Date productionDate, int chargeVolume) {
         super(in, type, manufacturer, model, productionDate);
-        this.chargeVolume = chargeValume;
+        this.chargeVolume = chargeVolume;
     }
 
     public int getChargeVolume() {
