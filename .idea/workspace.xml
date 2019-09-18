@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="" />
+    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/exception/DeviceValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ncPractice4">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.Main" />
       <module name="ncPractice4" />
@@ -113,8 +125,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ncPractice4" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in ncPractice4" />
         <item itemvalue="JUnit.ServiceImplTest.filtrateByType" />
         <item itemvalue="JUnit.ServiceImplTest.filtrateByType_TypeNull" />
         <item itemvalue="JUnit.ServiceImplTest" />
