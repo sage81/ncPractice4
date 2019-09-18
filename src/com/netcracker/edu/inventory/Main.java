@@ -21,12 +21,13 @@ public class Main {
         wr.setType(WifiRouter.class.getSimpleName());
         Device tn = new Battery();
         tn.setType(null);
+
         Device[] devices = new Device[] {null, r, b, tn, r, s, tn, null, wr, b};
-        Device[] expResult = new Device[] {null, r, null, null, r, null, null, null, null, null};
+        Device[] expResult = new Device[] {null, null, null, tn, null, null, tn, null, null, null};
 
-        showDevArray(devices);
-
-        service.filtrateByType(devices, Router.class.getSimpleName());
+        service.filtrateByType(devices, null);
+//        service.filtrateByType(devices, r.getClass().getSimpleName());
+//        showDevArray(devices);
 
         System.out.println("*******************************************************************");
         showDevArray(devices);

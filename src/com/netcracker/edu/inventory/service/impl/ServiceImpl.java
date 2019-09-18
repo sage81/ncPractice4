@@ -2,6 +2,7 @@ package com.netcracker.edu.inventory.service.impl;
 
 import com.netcracker.edu.inventory.model.Device;
 import com.netcracker.edu.inventory.service.Service;
+import com.sun.xml.internal.ws.util.StringUtils;
 
 public class ServiceImpl implements Service {
     @Override
@@ -41,8 +42,14 @@ public class ServiceImpl implements Service {
     public void filtrateByType(Device[] devices, String type) {
         for (int i = 0; i < devices.length; i++) {
             if (devices[i] != null) {
-                if (!type.equals(devices[i].getType())) {
-                    devices[i] = null;
+                if (devices[i].getType() != null) {
+                    if (!devices[i].getType().equals(type)) {
+                        devices[i] = null;
+                    }
+                } else if (type != null) {
+                    if (!type.equals(devices[i].getType())) {
+                        devices[i] = null;
+                    }
                 }
             }
         }
