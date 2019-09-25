@@ -26,3 +26,5 @@ hs_err_pid*
 /tests/
 /.idea/
 /out/
+/application_log.txt.*
+
