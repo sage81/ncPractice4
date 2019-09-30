@@ -29,3 +29,6 @@ hs_err_pid*
 /out/
 /application_log.txt.*
 
+.idea/workspace.xml
+ncPractice4.iml
+*.iml

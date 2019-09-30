@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="">
+    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="at changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/AbstractDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/RackArrayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/netcracker/edu/inventory/model/impl/RackArrayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncPractice4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ncPractice4.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,9 +33,11 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/lombok.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,72 +73,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeviceValidationExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ncPractice4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.netcracker.edu.inventory.service.impl.*" />
+          <option name="PATTERN" value="com.netcracker.edu.inventory.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.netcracker.edu.inventory.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.service.impl.ServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.netcracker.edu.inventory.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.exception.DeviceValidationExceptionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest.filtrateByType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RackArrayImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ncPractice4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.netcracker.edu.inventory.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.netcracker.edu.inventory.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.service.impl.ServiceImplTest" />
-      <option name="METHOD_NAME" value="filtrateByType" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:com.netcracker.edu.inventory.model.impl.RackArrayImplTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest.filtrateByType_TypeNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RackArrayImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ncPractice4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.netcracker.edu.inventory.service.impl.*" />
+          <option name="PATTERN" value="com.netcracker.edu.inventory.model.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.netcracker.edu.inventory.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.service.impl.ServiceImplTest" />
-      <option name="METHOD_NAME" value="filtrateByType_TypeNull" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.netcracker.edu.inventory.model.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.netcracker.edu.inventory.model.impl.RackArrayImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ServiceImplTest" />
-      <item itemvalue="JUnit.ServiceImplTest.filtrateByType" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ServiceImplTest.filtrateByType_TypeNull" />
       <item itemvalue="JUnit.All in ncPractice4" />
+      <item itemvalue="JUnit.RackArrayImplTest" />
+      <item itemvalue="JUnit.DeviceValidationExceptionTest" />
+      <item itemvalue="JUnit.RackArrayImplTest (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in ncPractice4" />
+        <item itemvalue="JUnit.RackArrayImplTest (1)" />
+        <item itemvalue="JUnit.DeviceValidationExceptionTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ServiceImplTest.filtrateByType" />
-        <item itemvalue="JUnit.ServiceImplTest.filtrateByType_TypeNull" />
-        <item itemvalue="JUnit.ServiceImplTest" />
+        <item itemvalue="JUnit.RackArrayImplTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\yava0913\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -202,7 +198,42 @@
       <option name="project" value="LOCAL" />
       <updated>1568839059148</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="at changes">
+      <created>1568845824317</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568845824317</updated>
+    </task>
+    <task id="LOCAL-00010" summary="at changes">
+      <created>1568845858094</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568845858094</updated>
+    </task>
+    <task id="LOCAL-00011" summary="at changes">
+      <created>1569447774435</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569447774435</updated>
+    </task>
+    <task id="LOCAL-00012" summary="at changes">
+      <created>1569860042312</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1569860042312</updated>
+    </task>
+    <task id="LOCAL-00013" summary="at changes">
+      <created>1569880049390</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1569880049390</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +241,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
