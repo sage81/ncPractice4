@@ -104,18 +104,16 @@ public class RackArrayImpl implements Rack {
 
     @Override
     public Device getDevByIN(int in) {
+        Device returenedDevice = null;
 
-        Device device = null;
-
-        for (int i = 0; i < devices.length; i++) {
-            if (!isSlotAvailable(i)) {
-                if (devices[i].getIn() == in) {
-                    device =  devices[i];
-                    break;
-                }
+        for (Device device : devices) {
+            if (device != null && device.getIn() == in) {
+                returenedDevice =  device;
+                break;
             }
         }
-        return device;
+
+        return returenedDevice;
     }
 
     public boolean isRackEmpty() {
@@ -132,12 +130,6 @@ public class RackArrayImpl implements Rack {
 
     public boolean isSlotAvailable(int index) {
         return isSlotEmpty(index);
-    }
-
-    private void showError(String errMsg) {
-        if (!errMsg.isEmpty()) {
-            System.err.println(errMsg);
-        }
     }
 
     private void throwIndexOutOfBoundsException(int index) {

@@ -1,13 +1,9 @@
 package com.netcracker.edu.inventory;
 
-import com.netcracker.edu.inventory.exception.DeviceValidationException;
 import com.netcracker.edu.inventory.model.Device;
 import com.netcracker.edu.inventory.model.Rack;
-import com.netcracker.edu.inventory.model.impl.*;
-import com.netcracker.edu.inventory.service.impl.ServiceImpl;
-
-import java.util.Date;
-import java.util.logging.Logger;
+import com.netcracker.edu.inventory.model.impl.Battery;
+import com.netcracker.edu.inventory.model.impl.RackArrayImpl;
 
 public class Main {
 
@@ -40,11 +36,9 @@ public class Main {
     }
 
     private static void showDevArray(Device[] devices) {
-        for (int i = 0; i < devices.length; i++) {
-            if (devices[i] != null) {
-                System.out.println("slot"+ i + " | " + devices[i]);
-            } else {
-                System.out.println("slot"+ i + " | empty" );
+        for (Device device : devices) {
+            if (device != null) {
+                System.out.println(device);
             }
         }
     }
