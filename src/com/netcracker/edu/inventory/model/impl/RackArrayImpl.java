@@ -4,6 +4,8 @@ import com.netcracker.edu.inventory.exception.DeviceValidationException;
 import com.netcracker.edu.inventory.model.Device;
 import com.netcracker.edu.inventory.model.Rack;
 
+import java.io.IOException;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class RackArrayImpl implements Rack {
@@ -13,6 +15,14 @@ public class RackArrayImpl implements Rack {
     private static Logger log = Logger.getLogger(RackArrayImpl.class.getName());
 
     public RackArrayImpl(int size) {
+
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    RackArrayImpl.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         if (size > 0) {
             this.size = size;
         } else {
@@ -46,7 +56,7 @@ public class RackArrayImpl implements Rack {
         if (isSlotExist(index)) {
             device = devices[index];
         } else {
-            throwIOOB(index);
+            throwIndexOutOfBoundsException(index);
         }
 
         return device;
@@ -58,7 +68,7 @@ public class RackArrayImpl implements Rack {
         boolean isInserted = false;
 
         if (!isSlotExist(index)) {
-            return throwIOOB(index);
+            throwIndexOutOfBoundsException(index);
         } else if(!isDeviceValid(device)) {
             log.severe("Rack.insertDevToSlot " + device);
             throw new DeviceValidationException("Rack.insertDevToSlot", device);
@@ -79,14 +89,14 @@ public class RackArrayImpl implements Rack {
         Device device = null;
 
         if (isSlotExist(index)) {
-            if (isSlotAvailable(index)) {
+            if (!isSlotAvailable(index)) {
                 device = devices[index];
                 devices[index] = null;
             } else {
                 log.warning("Can not remove from empty slot " + index);
             }
         } else {
-            throwIOOB(index);
+            throwIndexOutOfBoundsException(index);
         }
 
         return device;
@@ -130,7 +140,7 @@ public class RackArrayImpl implements Rack {
         }
     }
 
-    private boolean throwIOOB(int index) {
+    private void throwIndexOutOfBoundsException(int index) {
         log.severe("Wrong slot index["
                 + index + "], should be in the range:0-" + (getSize() - 1));
         throw new IndexOutOfBoundsException("Wrong slot index["

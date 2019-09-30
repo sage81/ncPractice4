@@ -7,14 +7,20 @@ import com.netcracker.edu.inventory.model.impl.*;
 import com.netcracker.edu.inventory.service.impl.ServiceImpl;
 
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class Main {
 
     public static void main(String[] args) {
-        RackArrayImpl rack = new RackArrayImpl(5);
-        Battery battery = new Battery(-12,"bat", "man", "model", null, 45);
 
-        System.out.println(rack.isDeviceValid(null));
+        Battery battery = new Battery(1,"bat", "man", "model", null, 45);
+
+        Rack rack = new RackArrayImpl(10);
+        rack.insertDevToSlot(battery, 0);
+
+        System.out.println(rack.removeDevFromSlot(0));
+        showRack(rack);
+
     }
 
     private static void showRack(Rack rack) {

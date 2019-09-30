@@ -1,7 +1,10 @@
 package com.netcracker.edu.inventory.model.impl;
 
 import com.netcracker.edu.inventory.model.Device;
+
+import java.io.IOException;
 import java.util.Date;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public abstract class AbstractDevice implements Device {
@@ -11,9 +14,10 @@ public abstract class AbstractDevice implements Device {
     private String manufacturer;
     private String model;
     private Date productionDate;
-    private static Logger log = Logger.getLogger(AbstractDevice.class.getName());
+    private Logger log = Logger.getLogger(AbstractDevice.class.getName());
 
     public AbstractDevice() {
+        logReadConfig();
     }
 
     public AbstractDevice(int in, String type, String manufacturer, String model, Date productionDate) {
@@ -22,6 +26,7 @@ public abstract class AbstractDevice implements Device {
         this.manufacturer = manufacturer;
         this.model = model;
         this.productionDate = productionDate;
+        logReadConfig();
     }
 
     @Override
@@ -38,7 +43,7 @@ public abstract class AbstractDevice implements Device {
             log.severe("IN(" + in + ") can not be negative");
             throw new IllegalArgumentException("IN can not be negative");
         } else if (this.in > 0) {
-            log.warning("Inventory number can not be reset");
+            log.warning("Can not reset existing Inventory number");
         }
     }
 
@@ -82,9 +87,18 @@ public abstract class AbstractDevice implements Device {
         this.productionDate = productionDate;
     }
 
+    private void logReadConfig() {
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    AbstractDevice.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            System.err.println("Could not setup logger configuration: " + e.toString());
+        }
+    }
+
     @Override
     public String toString() {
-        return "AbstractDevice{" +
+        return "Device{" +
                 "in=" + in +
                 ", type='" + type + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +

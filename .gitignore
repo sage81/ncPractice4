@@ -25,6 +25,7 @@ hs_err_pid*
 # Excluded directory
 /tests/
 /.idea/
+/.idea/workspace.xml
 /out/
 /application_log.txt.*
 
