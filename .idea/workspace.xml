@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="at changes">
+    <list default="true" id="c172164b-14f9-45b1-9147-f8e5d3d91add" name="Default Changelist" comment="Revert &quot;at changes&quot;&#10;&#10;This reverts commit 4b911894">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncPractice4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ncPractice4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncPractice4.iml" beforeDir="false" />
     </list>
+    <list id="c0de2e58-77bf-4745-8510-7481ad851fee" name="at changes" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ncPractice5" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QygPCRwrNkQALC9vdDlfqtOEj7" />
@@ -34,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/lombok.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -123,11 +130,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ncPractice4" />
         <item itemvalue="JUnit.RackArrayImplTest (1)" />
         <item itemvalue="JUnit.DeviceValidationExceptionTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RackArrayImplTest" />
+        <item itemvalue="JUnit.All in ncPractice4" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +258,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="at changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="at changes" />
+    <MESSAGE value="Revert &quot;at changes&quot;&#10;&#10;This reverts commit 4b911894" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;at changes&quot;&#10;&#10;This reverts commit 4b911894" />
   </component>
 </project>
